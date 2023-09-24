@@ -1,0 +1,53 @@
+main {
+	text-align: center;
+}
+img {
+	padding-right: 30px;
+}
+span {
+	display: flex;
+
+	justify-content: center;
+	flex-wrap: wrap;
+}
+h1 {
+	padding: 15px;
+	border: 1px solid black;
+	font-weight: normal;
+}
+b {
+	font-size: 20px;
+	margin-left: 10px;
+}
+input {
+	width: 110px;
+	height: 35px;
+	padding: 0px;
+	margin-right: 10px;
+}
+button {
+	width: 60px;
+	height: 35px;
+	padding: 0px;
+	margin-right: 10px;
+}
+select {
+	width: 60px;
+	height: 35px;
+	padding: 0px;
+	margin-right: 10px;
+}
+p {
+	display: inline-block;
+	font-size: 16px;
+
+	padding: 0px 10px;
+}
+.box {
+	height: -100px;
+	width: 67px;
+	padding: 0px 5px;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+}

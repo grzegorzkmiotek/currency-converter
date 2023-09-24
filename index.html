@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Przelicznik walut</title>
+	<script defer src="index.js"></script>
+</head>
+
+<body>
+	<span>
+		<img src="future collars.png" alt="Logo" width="100" height="100">
+		<h1>Przelicznik walut</h1>
+	</span>
+
+	<span>
+		<form id="income-form" class="size">
+
+			<input type="number" id="amount" placeholder="  Kwota">
+			<select id="from-currency">
+				<option value="EUR">Euro</option>
+				<option value="USD">Dolar amerykański</option>
+				<option value="CHF">Frank szwajcarski</option>
+			</select>
+
+			<button id="get-currencies">Przelicz</button>
+			<p>To</p><p id="result" class="box"></p><p>PLN</p>
+		</form>
+	</span>
+	<hr width="400">
+</body>
+
+</html>
