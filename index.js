@@ -5,7 +5,6 @@ async function fetchExchangeRate(currencyCode) {
 	if (!response.ok) {
 		throw new Error(`Nie udało się...${response.statusText}`);
 	}
-
 	const data = await response.json();
 	return data.rates[0].mid;
 }

@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Przelicznik walut</title>
+		<script defer src="index.js"></script>
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<title>Przelicznik walut</title>
-	<script defer src="index.js"></script>
-</head>
+	<body>
+		<div class="display">
+			<img src="future collars.png" alt="Logo" class="image" />
+			<h1 class="title">Przelicznik walut</h1>
+		</div>
 
-<body>
-	<span>
-		<img src="future collars.png" alt="Logo" width="100" height="100">
-		<h1>Przelicznik walut</h1>
-	</span>
-
-	<span>
 		<form id="income-form" class="size center">
-
-			<input type="number" id="amount" placeholder="  Kwota">
+			<input type="number" id="amount" placeholder="Kwota" class="input" />
 			<select id="from-currency">
 				<option value="EUR">Euro</option>
 				<option value="USD">Dolar amerykański</option>
@@ -26,10 +23,10 @@
 			</select>
 
 			<button id="get-currencies">Przelicz</button>
-			<p class="box center">To</p><p id="result" class="box"></p><p>PLN</p>
+			<p class="box center">To</p>
+			<p id="result" class="box"></p>
+			<p>PLN</p>
 		</form>
-	</span>
-	<hr width="400">
-</body>
-
+		<hr width="400" />
+	</body>
 </html>

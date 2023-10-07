@@ -1,54 +1,37 @@
-main {
-	text-align: center;
+body {
+	margin: 0 auto;
 }
 .center {
 	text-align: center;
 }
-img {
-	padding-right: 30px;
+.image {
+	width: 100px;
+	height: 100px;
 }
-
-@media only screen and (max-width: 700px) {
-	body {
-		width: 50%;
-	}
-	hr {
-		width: 200px;
-	}
-	img {
-		padding-right: 0px;
-		width: 90px;
-		height: 90px;
-	}
-}
-span {
+.display {
 	display: flex;
-
 	justify-content: center;
 	flex-wrap: wrap;
 }
-h1 {
+.title {
 	padding: 15px;
 	border: 1px solid black;
 	font-weight: normal;
 }
-b {
-	font-size: 20px;
-	margin-left: 10px;
-}
-input {
+
+#amount {
 	width: 110px;
 	height: 35px;
 	padding: 0px;
 	margin-right: 10px;
 }
-button {
+#get-currencies {
 	width: 60px;
 	height: 35px;
 	padding: 0px;
 	margin-right: 10px;
 }
-select {
+#from-currency {
 	width: 60px;
 	height: 35px;
 	padding: 0px;
@@ -57,7 +40,6 @@ select {
 p {
 	display: inline-block;
 	font-size: 16px;
-
 	padding: 0px 10px;
 }
 .box {
@@ -67,4 +49,16 @@ p {
 	font-style: italic;
 	font-weight: bold;
 	font-size: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+	body {
+		width: 50%;
+	}
+	.image {
+		text-align: center;
+	}
+	hr {
+		width: 200px;
+	}
 }
