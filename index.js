@@ -1,5 +1,5 @@
 async function fetchExchangeRate(currencyCode) {
-	const url = `http://api.nbp.pl/api/exchangerates/rates/a/${currencyCode}`;
+	const url = `https://api.nbp.pl/api/exchangerates/rates/a/${currencyCode}`;
 	const response = await fetch(url);
 
 	if (!response.ok) {
