@@ -30,14 +30,19 @@
 	padding: 0px;
 	margin-right: 10px;
 }
+.currency-container {
+	width: 150px;
+}
 .box {
 	display: inline-block;
-	
 	width: 67px;
 	padding: 0px 5px;
 	font-style: italic;
 	font-weight: bold;
 	font-size: 20px;
+}
+.hr {
+	width: 400px;
 }
 @media only screen and (max-width: 700px) {
 	.body {
@@ -46,7 +51,7 @@
 	.image {
 		text-align: center;
 	}
-	hr {
+	.hr {
 		width: 200px;
 	}
 }
