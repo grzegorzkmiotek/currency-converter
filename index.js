@@ -13,6 +13,12 @@ function convertCurrency(event) {
 	event.preventDefault();
 	const code = document.querySelector("#from-currency").value;
 	const amount = document.querySelector("#amount").value;
+	// if (rate) {
+	// 	const result = rate * amount;
+	// 	document.querySelector("#result").innerText = result.toFixed(2);
+	// } else {
+	// 	// wyświetlenie błędu użytkownikowi
+	// }
 
 	fetchExchangeRate(code)
 		.then((rate) => {
@@ -21,7 +27,10 @@ function convertCurrency(event) {
 		})
 		.catch((error) => {
 			console.error(`Wystąpił błąd! ${error}`);
+			// document.createElement("li").innerText =
+			// ''`Wystąpił błąd! ${error}`spróbuj później...'
 		});
+	return data?.rates?.[0]?.mid;
 }
 document
 	.querySelector("#income-form")

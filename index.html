@@ -8,24 +8,31 @@
 		<script defer src="index.js"></script>
 	</head>
 
-	<body>
+	<body class="body">
 		<div class="display">
 			<img src="future collars.png" alt="Logo" class="image" />
 			<h1 class="title">Przelicznik walut</h1>
 		</div>
 
 		<form id="income-form" class="size center">
-			<input type="number" id="amount" placeholder="Kwota" class="input" />
-			<select id="from-currency">
+			<input
+				type="number"
+				id="amount"
+				placeholder="Kwota"
+				class="input"
+				required
+				min="0.01"
+				step="0.01" />
+			<select id="from-currency" class="container">
 				<option value="EUR">Euro</option>
 				<option value="USD">Dolar amerykański</option>
 				<option value="CHF">Frank szwajcarski</option>
 			</select>
 
-			<button id="get-currencies">Przelicz</button>
+			<button id="get-currencies" class="container">Przelicz</button>
 			<p class="box center">To</p>
 			<p id="result" class="box"></p>
-			<p>PLN</p>
+			<p class="box">PLN</p>
 		</form>
 		<hr width="400" />
 	</body>
